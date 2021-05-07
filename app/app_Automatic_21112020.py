@@ -28,13 +28,13 @@ PATH = os.getcwd()
 PATH = pathlib.Path(PATH)
 DATA_PATH = PATH.joinpath('data').resolve()
 
-lati = [-3.78300,-3.78300,-22.9146,-25.4784,-23.6489]
-long = [-38.5434,-38.5434,-43.4461,-49.2733,-46.6388]
-zoom = [11,11,10,10,9]
+lati = [-3.78300,-3.78300,-22.9146,-25.4784,-23.6489,-20.3222,-9.297]
+long = [-38.5434,-38.5434,-43.4461,-49.2733,-46.6388,-40.3381,-48.428]
+zoom = [11,11,10,10,9,10,10]
 
-state = ["a","a","b","c","d"]
+state = ["a","a","b","c","d","e","f"]
 
-for x in range(1,5):
+for x in range(6,7):
     MAP_ESTADO = "".join([state[x],".geojson"]) #'mapfortaleza.geojson' #ok
     with open(DATA_PATH.joinpath(MAP_ESTADO), encoding='utf-8') as shapefile:
         Estado_geojson = json.load(shapefile)
