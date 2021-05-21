@@ -34,7 +34,7 @@ zoom = [11,11,10,10,9,10,10]
 
 state = ["a","a","b","c","d","e","f"]
 
-for x in range(6,7):
+for x in range(1,5):
     MAP_ESTADO = "".join([state[x],".geojson"]) #'mapfortaleza.geojson' #ok
     with open(DATA_PATH.joinpath(MAP_ESTADO), encoding='utf-8') as shapefile:
         Estado_geojson = json.load(shapefile)
